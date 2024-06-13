@@ -5,13 +5,8 @@
     <div class="header-top container-fuild hidden-xs">
       <div class="container">
         <div class="server pull-left">
-          <span class="glyphicon glyphicon-earphone"></span>888-888-888
-          <span class="glyphicon glyphicon-envelope"></span>xxx@163.com
-          <span class="glyphicon glyphicon-time"></span>7x24小时为您服务
-        </div>
-        <div class="shejiao pull-right">
-          <span class="glyphicon glyphicon-hand-right"></span>赶快联系我们吧！
-          <span class="glyphicon glyphicon-hand-left"></span>
+          <span class="glyphicon glyphicon-earphone"></span>15954445757
+          <span class="glyphicon glyphicon-envelope"></span>2134933658@qq.com
         </div>
       </div>
     </div>
@@ -19,7 +14,7 @@
     <div class="header-nav container hidden-xs">
       <!-- 导航logo -->
       <div class="header-nav-logo">
-        <img src="@/assets/img/logo_black.png">
+        <img src="@/assets/img/logo.png">
       </div>
       <!-- 导航内容 -->
       <ul class="header-nav-wrapper">
@@ -93,42 +88,8 @@ export default {
           children: []
         },
         {
-          name: "软件产品",
-          path: "/software",
-          children: [
-            {
-              name: "智能小镇管理系统",
-              path: "/software/smartTown"
-            },
-            {
-              name: "大数据管理系统",
-              path: "/software/bigData"
-            }
-          ]
-        },
-        {
-          name: "相关服务",
-          path: "/service",
-          children: []
-        },
-        {
-          name: "新闻动态",
-          path: "/newsinformation",
-          children: []
-        },
-        {
-          name: "公司介绍",
+          name: "关于我们",
           path: "/companyintroduction",
-          children: []
-        },
-        {
-          name: "工作机会",
-          path: "/jobchance",
-          children: []
-        },
-        {
-          name: "联系我们",
-          path: "/contactus",
           children: []
         }
       ]
@@ -161,7 +122,7 @@ export default {
   color: #fff;
   font-size: 12px;
   line-height: 50px;
-  background: #474747;
+  background: #e74b3c;
 }
 /* 顶部的图标 */
 #header .header-top span {
@@ -180,10 +141,10 @@ export default {
 }
 /* 导航栏logo图片 */
 #header .header-nav .header-nav-logo img {
-  width: 95px;
-  height: 45px;
+  width: 500px;
+  height: 140px;
   position: absolute;
-  top: 0;
+  top: 90px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -306,7 +267,7 @@ export default {
     height: 50px;
     font-size: 20px;
     line-height: 50px;
-    background: #474747;
+    background: #e74b3c;
     position: relative;
   }
   /* 导航栏 菜单图标 */
@@ -327,7 +288,7 @@ export default {
     top: 50px;
     left: 0;
     width: 100%;
-    background: #474747;
+    background: #e74b3c;
     z-index: 9999999;
   }
   /* 导航栏 每个导航 */

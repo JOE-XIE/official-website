@@ -13,99 +13,13 @@
             </div>
           </div>
         </div>
-        <!-- 如果需要分页器 -->
-        <div class="swiper-pagination"></div>
-
-        <!-- 如果需要导航按钮 -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </div>
-    <!-- 大数据管理系统 -->
-    <div id="bigData" class="container-fuild">
-      <div class="row bigData-container">
-        <div class="col-xs-12 col-sm-12 col-md-6 wow zoomIn">
-          <img class="img-responsive" src="@/assets/img/img1.png" alt="大数据管理系统">
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6">
-          <h2 class="bigData-title">
-            大数据管理系统
-            <small>/ Big Data Management System</small>
-          </h2>
-          <p>当今最领先的响应式自助建站平台。无论您是普通互联网用户，还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。想创建一个简单的单页式站点，还是一个专业的公司网站，亦或是一个别具一格的博客？起飞页可以满足您的所有需求。</p>
-          <p>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户，还是专业网站制作人员。</p>
-          <h2 class="bigData-device">PC/PAD/Phone &nbsp; 全设备支持</h2>
-          <a href="#" class="btn btn-lg btn-block btn-info">联系我们</a>
-        </div>
-      </div>
-    </div>
-    <!-- 您身边的IT专家 -->
-    <div id="contactUs" class="container-fuild text-center">
-      <div class="container contactUs-container wow slideInUp">
-        <h1>您身边的IT专家</h1>
-        <h3>7x24小时提供出色的IT服务</h3>
-        <button
-          class="btn btn-default btn-sm"
-          onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#3f3f3f';"
-          onmouseenter="this.style.backgroundColor='transparent'; this.style.borderColor='#ffffff'; this.style.color='#ffffff';"
-        >联系我们</button>
-        <div class="contactUs-contactWay">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
-    <!-- 客户评价 -->
-    <div id="customer" class="container-fuild">
-      <div class="container customer-container">
-        <p class="customer-title text-center">客户评价</p>
-        <div class="swiper-container customer-swiper hidden-xs">
-          <div class="swiper-wrapper">
-            <div
-              class="swiper-slide customer-block"
-              v-for="(item,index) in customerList"
-              :key="index"
-            >
-              <div class="customer-logo">
-                <img class="center-block" :src="item.logo" alt="logo">
-              </div>
-              <div class="customer-yh">
-                <img src="@/assets/img/yinhao.png" alt="引号">
-              </div>
-              <div class="customer-content1">
-                <small>{{item.content}}</small>
-              </div>
-              <div class="customer-content2">{{item.title}}</div>
-            </div>
-          </div>
-          <!-- 如果需要导航按钮 -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-        <div class="row visible-xs customer-block">
-          <div class="col-xs-12" v-for="(item,index) in customerList" :key="index">
-            <div class="customer-logo">
-              <img class="center-block" :src="item.logo" alt="logo">
-            </div>
-            <div class="customer-yh">
-              <img src="@/assets/img/yinhao.png" alt="引号">
-            </div>
-            <div class="customer-content1">
-              <small>{{item.content}}</small>
-            </div>
-            <div class="customer-content2">
-              <small>{{item.title}}</small>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <!-- 为什么选择我们 -->
     <div id="whyChooseUs" class="conatiner-fuild">
       <div class="container">
         <div class="whyChooseUs-title text-center">
-          <p>为什么选择我们的服务</p>
+          <p>为什么选择我们</p>
           <p>THE REASON TO CHOOSING US</p>
         </div>
         <div class="row">
@@ -143,28 +57,10 @@ export default {
     return {
       swiperList: [
         {
-          img: require("@/assets/img/banner1.png"),
+          img: require("@/assets/img/banner.jpeg"),
           path: "",
-          title: '您身边的IT专家1',
-          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
-        },
-        {
-          img: require("@/assets/img/banner2.jpg"),
-          path: "",
-          title: '您身边的IT专家2',
-          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
-        },
-        {
-          img: require("@/assets/img/banner1.png"),
-          path: "",
-          title: '您身边的IT专家3',
-          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
-        },
-        {
-          img: require("@/assets/img/banner2.jpg"),
-          path: "",
-          title: '您身边的IT专家4',
-          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
+          title: '专业医疗',
+          content: '为您的健康保驾护航',
         }
       ],
       customerList: [
@@ -255,24 +151,24 @@ export default {
       ],
       serverList: [
         {
-          logo: require("@/assets/img/tel.png"),
-          title: "核心优势1",
-          content: "<p>由专业客服提供人工服务</p>负责疑难问题和故障受理"
+          logo: require("@/assets/img/23538.png"),
+          title: "家庭医生",
+          content: "连续、及时有效的个性化医疗保健服务平台，架起医生与患者沟通的桥梁。"
         },
         {
-          logo: require("@/assets/img/computer.png"),
-          title: "核心优势2",
-          content: "<p>利用远程视频工具，提供协助</p>帮助客户进行调试、解决故障"
+          logo: require("@/assets/img/23539.png"),
+          title: "健康管理",
+          content: "建立个人健康档案，有效管理全家人的健康数据，做好慢性病的有效防治。"
         },
         {
-          logo: require("@/assets/img/qq.png"),
-          title: "核心优势3",
-          content: "<p>利用企业QQ提供在线解答</p>帮助企业快速准确解决问题和故障"
+          logo: require("@/assets/img/23540.png"),
+          title: "体质辨识",
+          content: "通过国家体质辨识标准，判断您的体质类型，及时调理，做到未病先防。"
         },
         {
-          logo: require("@/assets/img/skill.png"),
-          title: "核心优势4",
-          content: "<p>由技术支持工程师，负责问题解答</p>需求受理及故障受理"
+          logo: require("@/assets/img/23541.png"),
+          title: "医患交互",
+          content: "利用互联网优势，建立患者与医生的纽带，使双方及时有效的进行沟通。"
         }
       ]
     };
@@ -343,7 +239,7 @@ export default {
 
 /* 轮播图 */
 #swiper {
-  height: 600px;
+  height: 400px;
 }
 #swiper .banner-swiper {
   width: 100%;

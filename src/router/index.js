@@ -70,7 +70,7 @@ export default new Router({
           name: 'companyintroduction',
           component: resolve => require(['@/view/CompanyIntroduction'], resolve),
           meta: {
-            title: '公司介绍'
+            title: '关于我们'
           }
         }, {
           path: '/jobchance',

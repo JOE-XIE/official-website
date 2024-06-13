@@ -3,16 +3,14 @@
     <div class="logo">
       <img src="@/assets/img/logo_white.png" alt="logo图">
     </div>
-    <p class="title">公司企业网站模板</p>
     <p class="address_tel_fax">
-      <span>地址：公司地址</span>
-      <span>Tel：888-888-888</span>
+      <span>地址：山东省潍坊市昌邑市滨海经济开发区新村综合楼（西2）</span>
+      <span>Tel：15954445757</span>
     </p>
     <p class="email_wx">
-      <span>邮箱：xxx@163.com</span>
-      <span>微信号：xxx</span>
+      <span>邮箱：2134933658@qq.com</span>
     </p>
-    <p class="copy">Copyright &copy; 2018 - {{ new Date().getFullYear() }} 公司名称</p>
+    <a href="https://beian.miit.gov.cn/" class="copy" target="_blank">鲁ICP备2023023241号</a>
   </div>
 </template>
 <script>
@@ -28,7 +26,7 @@ export default {
   width: 100%;
   height: 100%;
   color: #fff;
-  background: #474747;
+  background: #e74b3c;
   overflow: hidden;
   text-align: center;
 }
@@ -54,6 +52,8 @@ export default {
   color: #d3d3d3;
   font-size: 14px;
   margin: 50px 0 10px;
+  cursor: pointer;
+  text-decoration: none;
 }
 @media screen and (max-width: 997px) {
   .title {
